@@ -1,0 +1,22 @@
+footer {
+  background-color: $tf-darkblue;
+  color: $text-light;
+  margin-top: 1rem;
+  padding: $default-padding;
+
+  a {
+    color: $text-light;
+
+    &:active {
+      color: $text-light;
+    }
+
+    &:hover {
+      color: $text-light;
+    }
+
+    &:visited {
+      color: $text-light;
+    }
+  }
+}

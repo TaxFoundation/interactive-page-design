@@ -1,0 +1,14 @@
+%sidebar {
+  border: 0;
+  color: $text-dark;
+  padding: $default-padding;
+}
+
+.sidebar-body {
+  @extend %sidebar;
+}
+
+.sidebar-heading {
+  @extend %sidebar;
+  margin-bottom: 0;
+}

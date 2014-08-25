@@ -1,0 +1,57 @@
+$tf-header-bg-color: $tf-darkblue;
+$tf-header-text-color: $text-light;
+$tf-search-button-color: $tf-red-dark;
+
+header {
+  background-color: $tf-header-bg-color;
+
+  a {
+    color: $text-light;
+
+    &:active {
+      color: $text-light;
+    }
+
+    &:hover {
+      color: $text-light;
+    }
+
+    &:visited {
+      color: $text-light;
+    }
+  }
+}
+
+.top-bar {
+  background-color: $tf-header-bg-color;
+  color: $tf-header-text-color;
+  line-height: 2.8125rem;
+
+  ul,
+  li {
+    @include set-font($text-sans-serif, 400);
+    font-size: .75rem;
+    line-height: 2.8125rem;
+    text-transform: uppercase;
+  }
+
+  input,
+  .button {
+    height: 2.8125rem;
+    margin: 0;
+    top: 0;
+  }
+
+  input[type="submit"] {
+    background-color: $tf-search-button-color;
+    font-family: 'FontAwesome';
+  }
+
+  .search-form {
+    padding: 0;
+  }
+
+  .hamburger {
+    padding-right: 1rem;
+  }
+}
