@@ -1,71 +1,8 @@
-// Colors
-$tf-darkblue-dark: #00324d;
-$tf-darkblue: #183c4f;
-$tf-darkblue-light: #4484a6;
-
-$tf-blue-dark: #085197;
-$tf-blue: #366899;
-$tf-blue-light: #5e96cd;
-
-$tf-lightblue-dark: #29abe2;
-$tf-lightblue: #6dc1e4;
-$tf-lightblue-light: #8fd6f4;
-
-$tf-teal-dark: #00a0b0;
-$tf-teal: #35a7b2;
-$tf-teal-light: #58ceda;
-
-$tf-green-dark: #22b573;
-$tf-green: #59b78d;
-$tf-green-light: #83dcb4;
-
-$tf-brown-dark: #6a4a3c;
-$tf-brown: #6c625e;
-$tf-brown-light: #b5b2b1;
-
-$tf-maroon-dark: #7b253e;
-$tf-maroon: #7d4b5a;
-$tf-maroon-light: #be8697;
-
-$tf-red-dark: #cc333f;
-$tf-red: #ce7178;
-$tf-red-light: #e8989e;
-
-$tf-umber-dark: #c35520;
-$tf-umber: #c57d5b;
-$tf-umber-light: #e4a181;
-
-$tf-orange-dark: #f7931e;
-$tf-orange: #f9b668;
-$tf-orange-light: #ffc786;
-
-$tf-yellow-dark: #edc951;
-$tf-yellow: #efdb99;
-$tf-yellow-light: #faebba;
-
-$text-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$text-serif: 'Merriweather', serif;
-$text-dark: #333;
-$text-light: #fff;
-
 // Sizes
 
 $default-padding: 1.11111rem;
 
 // Semantic Defaults
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include set-font($text-sans-serif, 900);
-}
-
-p {
-  @include set-font($text-serif, 400);
-}
 
 article {
   margin-top: 3rem;
@@ -88,4 +25,8 @@ table {
 .button {
   background-color: $tf-darkblue;
   color: $text-light;
+}
+
+.slider {
+  margin-top: 2rem;
 }
