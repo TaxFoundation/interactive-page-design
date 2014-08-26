@@ -1,3 +1,47 @@
 .byline {
   @include set-font($text-sans-serif, 900);
 }
+
+.preview-caption-title {
+  @media #{$small-only} {
+    color: $text-dark;
+    font-size: rem-calc(24);
+  }
+  @media #{$medium-up} {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(24, 60, 79, .8);
+    color: $white;
+    padding: rem-calc(15 20);
+    width: calc(100% - 30px);
+    
+    p {
+      display: hidden;
+      height: 0;
+      -webkit-transition: display .5s, height .5s;
+    }
+    
+    &:hover {
+      p {
+      display: block;
+      height: 100%;
+      }
+    }
+  }
+}
+
+.preview-caption {
+  @media #{$medium-up} {
+
+    &:hover {
+      display: block;
+      height: 100%;
+    }
+  }
+}
+
+.preview-image {
+  @media #{$small-only} {
+    display: none;
+  }
+}
