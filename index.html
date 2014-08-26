@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tax Foundation Interactive</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bower_components/slick-carousel/css/style.css">
     <link href='http://fonts.googleapis.com/css?family=Lato:400,900|Merriweather:400,400italic,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -37,12 +38,18 @@
 
  <div class="row">
     <div class="large-12 columns">
-    <div id="slider">
-      <img src="http://placehold.it/1000x400&text=[ img 1 ]"/>
+      <ul data-orbit>
+        <li>
+          <img src="http://placehold.it/1000x400&text=[ img 1 ]"/>
+          <div class="orbit-caption">Placeholder 1</div>
+        </li>
+        <li>
+          <img src="http://placehold.it/1000x400&text=[ img 2 ]"/>
+          <div class="orbit-caption">Placeholder 2</div>
+        </li>
+      </ul>
     </div>
-    
-    <hr/>
-    </div>
+
   </div>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
