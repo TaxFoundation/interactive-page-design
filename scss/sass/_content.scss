@@ -15,11 +15,12 @@
   a {
     outline: none;
     text-decoration: none;
+    width: 100%;
   }
 
   img {
     display: block;
-    max-width: 100%;
+    width: 100%;
 
     a {
       border: 0;
@@ -28,34 +29,39 @@
 
   &:before,
   &:after {
-    color: $white;
-    opacity: 0;
     padding: 1rem;
     position: absolute;
-    -moz-transition: opacity .3s;
-    -webkit-transition: opacity .3s;
-    transition: opacity .3s;
-    width: 100%;
   }
 
   &:before {
     background-color: rgba($tf-darkblue, .8);
+    color: $white;
     content: attr(data-title);
     font-size: rem-calc(20);
-    height: 25%;
-    top: 0;
+    height: 25.1%;
+    top: 75%;
+    transition: top .2s linear;
+    width: 100%;
   }
 
   &:after {
     background-color: rgba($tf-darkblue, .8);
+    color: rgba($white, 0);
     content: attr(data-description);
     font-size: rem-calc(16);
-    height: 75%;
-    top: 25%;
+    height: 75.1%;
+    transition: color .3s ease, background-color .3s ease, top .2s linear;
+    top: 100%;
+    width: 100%;
   }
 
-  &:hover::before,
+  &:hover::before {
+    top: 0;
+  }
+
   &:hover::after {
-    opacity: 1;
+    background-color: rgba($tf-darkblue, .8);
+    color: rgba($white, 1);
+    top: 25%;
   }
 }
