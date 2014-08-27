@@ -92,18 +92,39 @@ $include-html-global-classes: $include-html-classes;
 
 // Global
 
+// Foundation colors
+$white       : #FFFFFF;
+$ghost       : #FAFAFA;
+$snow        : #F9F9F9;
+$vapor       : #F6F6F6;
+$white-smoke : #F5F5F5;
+$silver      : #EFEFEF;
+$smoke       : #EEEEEE;
+$gainsboro   : #DDDDDD;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
+$monsoon     : #777777;
+$steel       : #666666;
+$charcoal    : #555555;
+$tuatara     : #444444;
+$oil         : #333333;
+$jet         : #222222;
+$black       : #000000;
+
 // Tax Foundation Fonts
 $text-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $text-serif: 'Merriweather', serif;
-$text-dark: #333;
-$text-light: #fff;
+$text-dark: $oil;
+$text-light: $white;
 
 // We use these to define default font weights
 // $font-weight-normal: normal !default;
 // $font-weight-bold: bold !default;
 
 // We use these to control various global styles
-// $body-bg: $white;
+$body-bg: $smoke;
 $body-font-color: $text-dark;
 $body-font-family: $text-sans-serif;
 // $font-weight-normal:normal;
@@ -126,26 +147,6 @@ $body-font-family: $text-sans-serif;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
-
-   $white       : #FFFFFF;
-// $ghost       : #FAFAFA;
-// $snow        : #F9F9F9;
-// $vapor       : #F6F6F6;
-// $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
-// $smoke       : #EEEEEE;
-// $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
-// $monsoon     : #777777;
-// $steel       : #666666;
-// $charcoal    : #555555;
-// $tuatara     : #444444;
-// $oil         : #333333;
-// $jet         : #222222;
-// $black       : #000000;
 
 // Tax Foundation Colors
 $tf-darkblue-dark: #00324d;
@@ -929,7 +930,7 @@ $paragraph-line-height: 1.8rem;
 
 // We use these to control the caption styles
 // $orbit-container-bg: none;
-$orbit-caption-bg: rgba($tf-darkblue, 0.8);
+$orbit-caption-bg: rgba($tf-red-dark, 0.8);
 // $orbit-caption-font-color: $white;
 $orbit-caption-font-size: rem-calc(24);
 // $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
@@ -938,8 +939,8 @@ $orbit-caption-padding: rem-calc(15 20);
 
 // We use these to control the left/right nav styles
 // $orbit-nav-bg: transparent;
-$orbit-nav-bg-hover: rgba($tf-darkblue, 0.8);
-$orbit-nav-arrow-color: rgba($tf-darkblue, 0.8);
+$orbit-nav-bg-hover: rgba($tf-red-dark, 0.8);
+$orbit-nav-arrow-color: rgba($tf-red-dark, 0.8);
 $orbit-nav-arrow-color-hover: $white;
 
 // We use these to control the timer styles
@@ -947,8 +948,8 @@ $orbit-nav-arrow-color-hover: $white;
 $orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
-$orbit-bullet-nav-color: $tf-darkblue;
-$orbit-bullet-nav-color-active: $tf-darkblue-light;
+$orbit-bullet-nav-color: $tf-red-dark;
+$orbit-bullet-nav-color-active: $tf-red;
 // $orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers

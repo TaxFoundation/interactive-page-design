@@ -2,46 +2,60 @@
   @include set-font($text-sans-serif, 900);
 }
 
-.preview-caption-title {
-  @media #{$small-only} {
-    color: $text-dark;
-    font-size: rem-calc(24);
-  }
-  @media #{$medium-up} {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(24, 60, 79, .8);
-    color: $white;
-    padding: rem-calc(15 20);
-    width: calc(100% - 30px);
-    
-    p {
-      display: hidden;
-      height: 0;
-      -webkit-transition: display .5s, height .5s;
-    }
-    
-    &:hover {
-      p {
-      display: block;
-      height: 100%;
-      }
-    }
-  }
+.slider {
+  margin-top: 2rem;
 }
 
 .preview-caption {
-  @media #{$medium-up} {
+  display: inline-block;
+  margin-top: 2rem;
+  overflow: hidden;
+  position: relative;
 
-    &:hover {
-      display: block;
-      height: 100%;
+  a {
+    outline: none;
+    text-decoration: none;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+
+    a {
+      border: 0;
     }
   }
-}
 
-.preview-image {
-  @media #{$small-only} {
-    display: none;
+  &:before,
+  &:after {
+    color: $white;
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    -moz-transition: opacity .3s;
+    -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+    width: 100%;
+  }
+
+  &:before {
+    background-color: rgba($tf-darkblue, .8);
+    content: attr(data-title);
+    font-size: rem-calc(20);
+    height: 25%;
+    top: 0;
+  }
+
+  &:after {
+    background-color: rgba($tf-darkblue, .8);
+    content: attr(data-description);
+    font-size: rem-calc(16);
+    height: 75%;
+    top: 25%;
+  }
+
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
   }
 }
