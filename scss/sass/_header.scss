@@ -69,22 +69,31 @@ header {
     padding: 0;
   }
 
-  .hamburger {
-    @media #{$large-up} {
-      display: none;
-    }
-
-    @media #{$small-only} {
-      display: visible;
-      padding-right: 1rem;
-    }
-    @media #{$medium-only} {
-      display: visible;
-      padding-right: 1rem;
-    }
-  }
-
   .top-nav-donate {
     background-color: $tf-red-dark;
+  }
+}
+
+.tab-bar {
+  @media #{$small-only} {
+    display: visible;
+  }
+  @media #{$medium-up} {
+    display: visible;
+  }
+  @media #{$large-up} {
+    display: none;
+  }
+}
+
+.large-navigation {
+  @media #{$small-only} {
+    display: none;
+  }
+  @media #{$medium-only} {
+    display: none;
+  }
+  @media #{$large-up} {
+    display: visible;
   }
 }

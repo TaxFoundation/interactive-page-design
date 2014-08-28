@@ -857,7 +857,7 @@ $paragraph-line-height: 1.8rem;
 
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: $oil;
+$tabbar-bg: $tf-darkblue;
 // $tabbar-height: rem-calc(45);
 // $tabbar-icon-width: $tabbar-height;
 // $tabbar-line-height: $tabbar-height;
@@ -865,8 +865,8 @@ $paragraph-line-height: 1.8rem;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
-// $tabbar-right-section-border: solid 1px scale-color($tabbar-bg, $lightness: 13%);
-// $tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
+$tabbar-right-section-border: none;
+$tabbar-left-section-border: none;
 
 // Off Canvas Tab Bar Headers
 // $tabbar-header-color: $white;
@@ -876,7 +876,7 @@ $paragraph-line-height: 1.8rem;
 
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
-// $off-canvas-bg: $oil;
+$off-canvas-bg: $tf-darkblue;
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
@@ -889,7 +889,7 @@ $paragraph-line-height: 1.8rem;
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
 // $off-canvas-link-padding: rem-calc(10, 15);
-// $off-canvas-link-color: rgba($white, 0.7);
+$off-canvas-link-color: rgba($white, 1);
 // $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
 // $off-canvas-back-bg: $tuatara;
 // $off-canvas-back-border-top: $off-canvas-label-border-top;
