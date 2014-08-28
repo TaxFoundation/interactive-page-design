@@ -37,7 +37,10 @@ header {
 
   li {
     margin: 0;
-    padding: 0 1rem;
+
+    a {
+      padding: 0 1rem;
+    }
   }
 
   .top-nav-item,
@@ -50,6 +53,27 @@ header {
     }
     @media #{$large-up} {
       display: visible;
+    }
+  }
+
+  .top-nav-item {
+    -moz-transition: background .3s;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    
+    &:hover {
+      background-color: lighten($tf-darkblue, 10%);
+    }
+  }
+
+  .top-nav-donate {
+    background-color: $tf-red-dark;
+    -moz-transition: background .3s;
+    -webkit-transition: background .3s;
+    transition: background .3s;
+    
+    &:hover {
+      background-color: saturate($tf-red-dark, 7%);
     }
   }
 
@@ -67,10 +91,6 @@ header {
 
   .search-form {
     padding: 0;
-  }
-
-  .top-nav-donate {
-    background-color: $tf-red-dark;
   }
 }
 
