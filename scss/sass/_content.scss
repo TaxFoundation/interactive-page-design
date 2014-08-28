@@ -3,65 +3,86 @@
 }
 
 .slider {
-  margin-top: 2rem;
+  background-color: $smoke;
+  padding: 2rem 0 1rem 0;
 }
 
 .preview-caption {
   display: inline-block;
   margin-top: 2rem;
-  overflow: hidden;
-  position: relative;
 
-  a {
-    outline: none;
-    text-decoration: none;
-    width: 100%;
-  }
-
-  img {
-    display: block;
-    width: 100%;
+  @media #{$medium-up} {
+    overflow: hidden;
+    position: relative;
 
     a {
-      border: 0;
+      outline: none;
+      text-decoration: none;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+
+      a {
+        border: 0;
+      }
+    }
+
+    &:before,
+    &:after {
+      padding: .6rem 1rem;
+      position: absolute;
+    }
+
+    &:before {
+      background-color: rgba($tf-lightblue, 1);
+      color: $white;
+      content: attr(data-title);
+      font-size: rem-calc(14);
+      height: 20.1%;
+      top: 80%;
+      transition: top .2s linear;
+      width: 100%;
+    }
+
+    &:after {
+      background-color: rgba($tf-lightblue, .8);
+      color: rgba($white, 0);
+      content: attr(data-description);
+      font-size: rem-calc(14);
+      height: 80.1%;
+      top: 100%;
+      transition: color .3s ease, top .2s linear;
+      width: 100%;
+    }
+
+    &:hover::before {
+      top: 0;
+    }
+
+    &:hover::after {
+      color: rgba($white, 1);
+      top: 20%;
     }
   }
+  @media #{$small-only} {
+    img {
+      display: none;
+    }
+    
+    &:before {
+      display: block;
+      color: $text-dark;
+      content: attr(data-title);
+      font-size: rem-calc(16);
+    }
 
-  &:before,
-  &:after {
-    padding: 1rem;
-    position: absolute;
-  }
-
-  &:before {
-    background-color: rgba($tf-darkblue, .8);
-    color: $white;
-    content: attr(data-title);
-    font-size: rem-calc(20);
-    height: 25.1%;
-    top: 75%;
-    transition: top .2s linear;
-    width: 100%;
-  }
-
-  &:after {
-    background-color: rgba($tf-darkblue, .8);
-    color: rgba($white, 0);
-    content: attr(data-description);
-    font-size: rem-calc(16);
-    height: 75.1%;
-    transition: color .3s ease, background-color .3s ease, top .2s linear;
-    top: 100%;
-    width: 100%;
-  }
-
-  &:hover::before {
-    top: 0;
-  }
-
-  &:hover::after {
-    background-color: rgba($tf-darkblue, .8);
-    color: rgba($white, 1);
-    top: 25%;
+    &:after {
+      color: $text-dark;
+      content: attr(data-description);
+      font-size: rem-calc(14);
+    }
   }
 }

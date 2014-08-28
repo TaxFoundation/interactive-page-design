@@ -35,6 +35,24 @@ header {
     text-transform: uppercase;
   }
 
+  li {
+    margin: 0;
+    padding: 0 1rem;
+  }
+
+  .top-nav-item,
+  .top-nav-donate {
+    @media #{$small-only} {
+      display: none;
+    }
+    @media #{$medium-only} {
+      display: none;
+    }
+    @media #{$large-up} {
+      display: visible;
+    }
+  }
+
   input,
   .button {
     height: 2.8125rem;
@@ -52,6 +70,21 @@ header {
   }
 
   .hamburger {
-    padding-right: 1rem;
+    @media #{$large-up} {
+      display: none;
+    }
+
+    @media #{$small-only} {
+      display: visible;
+      padding-right: 1rem;
+    }
+    @media #{$medium-only} {
+      display: visible;
+      padding-right: 1rem;
+    }
+  }
+
+  .top-nav-donate {
+    background-color: $tf-red-dark;
   }
 }
