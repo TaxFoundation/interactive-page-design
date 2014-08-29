@@ -9,3 +9,16 @@ $(document).foundation({
     timer: true
   }
 });
+
+$(document).ready(function(){
+  var height = $(window).height(),
+      contentHeight = $(".off-canvas-wrap").height(),
+      wrappers = ["html", "body", ".off-canvas-wrap", ".inner-wrap"];
+
+  if (contentHeight < height ) {
+    for (var i = 0, n = wrappers.length; i < n; i++) {
+      $(wrappers[i]).addClass("full-height");
+    }
+    $("footer").addClass("sticky-footer");
+  }
+});

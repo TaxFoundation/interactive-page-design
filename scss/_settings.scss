@@ -113,41 +113,6 @@ $oil         : #333333;
 $jet         : #222222;
 $black       : #000000;
 
-// Tax Foundation Fonts
-$text-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$text-serif: 'Merriweather', serif;
-$text-dark: $oil;
-$text-light: $white;
-
-// We use these to define default font weights
-// $font-weight-normal: normal !default;
-// $font-weight-bold: bold !default;
-
-// We use these to control various global styles
-$body-bg: $white;
-$body-font-color: $text-dark;
-$body-font-family: $text-sans-serif;
-// $font-weight-normal:normal;
-// $body-font-weight: $font-weight-normal;
-// $body-font-style: normal;
-
-// We use this to control font-smoothing
-// $font-smoothing: antialiased;
-
-// We use these to control text direction settings
-// $text-direction: ltr;
-// $opposite-direction: right;
-// $default-float: left;
-// $last-child-float: $opposite-direction;
-
-// We use these as default colors throughout
-// $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
-// $warning-color: #f08a24;
-// $info-color: #a0d3e8;
-
 // Tax Foundation Colors
 $tf-darkblue-dark: #00324d;
 $tf-darkblue: #183c4f;
@@ -192,6 +157,41 @@ $tf-orange-light: #ffc786;
 $tf-yellow-dark: #edc951;
 $tf-yellow: #efdb99;
 $tf-yellow-light: #faebba;
+
+// Tax Foundation Fonts
+$text-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$text-serif: 'Merriweather', serif;
+$text-dark: $oil;
+$text-light: $white;
+
+// We use these to define default font weights
+// $font-weight-normal: normal !default;
+// $font-weight-bold: bold !default;
+
+// We use these to control various global styles
+$body-bg: $white;
+$body-font-color: $text-dark;
+$body-font-family: $text-sans-serif;
+// $font-weight-normal:normal;
+// $body-font-weight: $font-weight-normal;
+// $body-font-style: normal;
+
+// We use this to control font-smoothing
+// $font-smoothing: antialiased;
+
+// We use these to control text direction settings
+// $text-direction: ltr;
+// $opposite-direction: right;
+// $default-float: left;
+// $last-child-float: $opposite-direction;
+
+// We use these as default colors throughout
+$primary-color: $tf-darkblue;
+// $secondary-color: #e7e7e7;
+// $alert-color: #f04124;
+// $success-color: #43AC6A;
+// $warning-color: #f08a24;
+// $info-color: #a0d3e8;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -503,8 +503,8 @@ $paragraph-line-height: 1.8rem;
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
-// $button-bg-color: $primary-color;
-// $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
+$button-bg-color: $primary-color;
+$button-bg-hover: lighten($button-bg-color, 10%);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);
 // $secondary-button-border-color: $secondary-button-bg-hover;

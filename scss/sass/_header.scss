@@ -27,7 +27,6 @@ header {
   color: $tf-header-text-color;
   line-height: 2.8125rem;
 
-  ul,
   li {
     @include set-font($text-sans-serif, 400);
     font-size: .75rem;
@@ -40,40 +39,6 @@ header {
 
     a {
       padding: 0 1rem;
-    }
-  }
-
-  .top-nav-item,
-  .top-nav-donate {
-    @media #{$small-only} {
-      display: none;
-    }
-    @media #{$medium-only} {
-      display: none;
-    }
-    @media #{$large-up} {
-      display: visible;
-    }
-  }
-
-  .top-nav-item {
-    -moz-transition: background .3s;
-    -webkit-transition: background .3s;
-    transition: background .3s;
-    
-    &:hover {
-      background-color: lighten($tf-darkblue, 10%);
-    }
-  }
-
-  .top-nav-donate {
-    background-color: $tf-red-dark;
-    -moz-transition: background .3s;
-    -webkit-transition: background .3s;
-    transition: background .3s;
-    
-    &:hover {
-      background-color: saturate($tf-red-dark, 7%);
     }
   }
 
@@ -93,6 +58,42 @@ header {
     padding: 0;
   }
 }
+
+.top-nav-item,
+.top-nav-donate {
+  @media #{$small-only} {
+    display: none;
+  }
+  @media #{$medium-only} {
+    display: none;
+  }
+  @media #{$large-up} {
+    display: visible;
+  }
+}
+
+.top-nav-item {
+  -moz-transition: background .3s;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+
+  &:hover {
+    background-color: lighten($tf-darkblue, 10%);
+  }
+}
+
+.top-nav-donate {
+  background-color: $tf-red-dark;
+  -moz-transition: background .3s;
+  -webkit-transition: background .3s;
+  transition: background .3s;
+
+  &:hover {
+    background-color: saturate($tf-red-dark, 7%);
+  }
+}
+
+
 
 .tab-bar {
   @media #{$small-only} {
