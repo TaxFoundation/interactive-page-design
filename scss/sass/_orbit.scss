@@ -9,4 +9,43 @@
 .orbit-caption {
   font-family: $text-sans-serif;
   font-weight: 300;
+  line-height: rem-calc(56);
+}
+
+.slider {
+  background-color: $smoke;
+  height: calc(100vh - 2.8125rem); //minus $header-height, which doesn't compile correctly
+  //padding: rem-calc(0 0 15);
+
+  .button {
+    font-weight: 300;
+    margin: 0;
+    padding: rem-calc(8 16);
+  }
+
+  .row {
+    height: 100%;
+  }
+
+  .columns {
+    height: 100%;
+    padding: 0;
+  }
+
+  .orbit-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .orbit-slides-container {
+    height: 100% !important;
+    width: 100%;
+  }
+
+  li {
+    background-position: center !important;
+    background-size: cover !important;
+    height: 100%;
+    width: 100%;
+  }
 }

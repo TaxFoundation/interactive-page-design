@@ -930,17 +930,17 @@ $off-canvas-link-border-bottom: none;
 
 // We use these to control the caption styles
 // $orbit-container-bg: none;
-$orbit-caption-bg: rgba($tf-lightblue, .8);
+$orbit-caption-bg: rgba($tf-darkblue, .8);
 // $orbit-caption-font-color: $white;
-$orbit-caption-font-size: rem-calc(24);
+$orbit-caption-font-size: rem-calc(48);
 // $orbit-caption-position: "bottom"; // Supported values: "bottom", "under"
 $orbit-caption-padding: rem-calc(15 20);
 // $orbit-caption-height: auto;
 
 // We use these to control the left/right nav styles
 // $orbit-nav-bg: transparent;
-$orbit-nav-bg-hover: rgba($tf-lightblue, .8);
-$orbit-nav-arrow-color: rgba($tf-lightblue, .8);
+$orbit-nav-bg-hover: rgba($tf-darkblue, .8);
+$orbit-nav-arrow-color: rgba($tf-red-dark, .8);
 $orbit-nav-arrow-color-hover: $white;
 
 // We use these to control the timer styles
@@ -948,8 +948,8 @@ $orbit-nav-arrow-color-hover: $white;
 $orbit-timer-show-progress-bar: false;
 
 // We use these to control the bullet nav styles
-$orbit-bullet-nav-color: $tf-lightblue;
-$orbit-bullet-nav-color-active: $tf-blue;
+$orbit-bullet-nav-color: $tf-darkblue;
+$orbit-bullet-nav-color-active: $tf-darkblue;
 // $orbit-bullet-radius: rem-calc(9);
 
 // We use these to controls the style of slide numbers
