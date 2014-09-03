@@ -6,7 +6,8 @@ $(document).foundation({
     animation_speed: 500,
     navigation_arrows: true,
     slide_number: false,
-    timer: true
+    timer: true,
+    bullets: false
   }
 });
 

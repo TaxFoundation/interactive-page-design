@@ -25,12 +25,12 @@ header {
 .top-bar {
   background-color: $tf-header-bg-color;
   color: $tf-header-text-color;
-  line-height: 2.8125rem;
+  line-height: $header-height;
 
   li {
     @include set-font($text-sans-serif, 400);
     font-size: .75rem;
-    line-height: 2.8125rem;
+    line-height: $header-height;
     text-transform: uppercase;
   }
 
@@ -44,7 +44,7 @@ header {
 
   input,
   .button {
-    height: 2.8125rem;
+    height: $header-height;
     margin: 0;
     top: 0;
   }
