@@ -4,12 +4,17 @@
 
 .slider {
   background-color: $smoke;
-  padding: 2rem 0 1rem;
+  //height: 100vh;
+  padding: rem-calc(0 0 15);
 
   .button {
     font-weight: 300;
     margin: 0;
     padding: rem-calc(8 16);
+  }
+
+  .columns {
+    padding: 0;
   }
 }
 
@@ -49,7 +54,7 @@
       font-size: rem-calc(14);
       height: 20.1%;
       top: 80%;
-      transition: top .3s ease;
+      transition: top .35s ease;
       width: 100%;
     }
 
@@ -60,7 +65,7 @@
       font-size: rem-calc(14);
       height: 80.1%;
       top: 100%;
-      transition: color .5s ease, top .3s ease;
+      transition: color .5s ease, top .35s ease;
       width: 100%;
     }
 
